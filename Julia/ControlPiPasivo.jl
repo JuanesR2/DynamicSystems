@@ -10,7 +10,7 @@ B = [0.0 -1.0;
 d = [1.0;
      0.0]
 
-u_ref = 0.6
+u_ref = 0.5
 
 # Compute x_ref 
 x_ref = -(A + u_ref * B) \ d
@@ -52,4 +52,4 @@ tode = sol.t  # Time points
 xode = hcat(sol.u...)'
 
 # # Plot the results using Plots.jl
-plot(tode, xode, xlabel="Time", ylabel="State Variables", label=["x1" "x2" "x3"])
+plot(tode, xode, xlabel="Time", ylabel="State Variables", label=["x1" "x2" "u_control"])

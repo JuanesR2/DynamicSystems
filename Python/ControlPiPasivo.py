@@ -51,5 +51,5 @@ xode = sol.y.T  # State variables [x1, x2, x3]
 plt.plot(tode, xode)
 plt.xlabel('Time')
 plt.ylabel('State Variables')
-plt.legend(['x1', 'x2', 'x3'])
+plt.legend(['x1', 'x2', 'u_control'])
 plt.show()
